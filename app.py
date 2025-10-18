@@ -1,4 +1,4 @@
-#Fernando
+#Fernando Mejia Lechuga
 #Bahena Praxedis Maria Adalid
 #Estrada Romero Angeles
 #Emiliano
@@ -13,3 +13,6 @@ import random
 app = Flask(__name__)
 app.secret_key = 'clave_secreta'
 
+#genera número aleatorio del 1-100
+def nuevo_numero():
+    return random.randint(1, 100)
