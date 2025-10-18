@@ -23,3 +23,10 @@ def index():
     if 'numero' not in session:
         iniciar_juego()
     return render_template('index.html', puntos=session['puntos'], intentos=session['intentos'])
+
+#función /adivinar
+#Configuración inicial y validación
+@app.route('/adivinar', methods=['POST'])
+def adivinar():
+    if 'numero' not in session:
+        iniciar_juego()
