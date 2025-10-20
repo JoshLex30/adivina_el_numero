@@ -9,6 +9,6 @@ print("¡Bienvenido al juego de Adivina el Número!")
 #Reiniciar juego y ejecutar servidor
 @app.route('/reiniciar')
 def reiniciar():
-    iniciar_juego(){
-        
-    }
+    iniciar_juego()
+    return render_template('index.html', puntos=session['puntos'], intentos=session['intentos'])
+
