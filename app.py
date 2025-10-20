@@ -3,3 +3,5 @@
 #Dario Emiliano 
 #Alexis Joshua Beltran Santiago
 
+
+print("¡Bienvenido al juego de Adivina el Número!")
